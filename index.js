@@ -9,10 +9,17 @@ function scuberGreetingForFeet(_feet){
   }
 }
 
-function ternaryCheckCity(){
-  // Write your code here!
+function ternaryCheckCity(_city){
+  return _city === "NYC" ? "Ok, sounds good." : "No go.";
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function switchOnCharmFromTip(_tipStr){
+  switch (_tipStr) {
+    case 'generous':
+      return 'Thank you so much.';
+    case 'not as generous':
+      return 'Thank you.';
+    case 'thanks for everything':
+      return 'Bye.';
+  }
 }
