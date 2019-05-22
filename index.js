@@ -15,10 +15,22 @@ function scuberGreetingForFeet(ride){
 }
 
 
-function ternaryCheckCity(){
-  // Write your code here!
+function ternaryCheckCity(city){
+  let greeting
+  
+  city === 'NYYC' ? (greeting = 'Ok, sounds good.') : (greeting = 'No go.');
+
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function switchOnCharmFromTip(tip){
+  let response
+  
+  switch (tip) {
+    case 'generous':
+        response = 'Thank you so much.';
+    case 'not as generous':
+        response = "Thank you.";
+    default:
+        response = "Bye.";
+}
 }
