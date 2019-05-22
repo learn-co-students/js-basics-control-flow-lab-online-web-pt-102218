@@ -18,8 +18,9 @@ function scuberGreetingForFeet(ride){
 function ternaryCheckCity(city){
   let greeting
   
-  city === 'NYYC' ? (greeting = 'Ok, sounds good.') : (greeting = 'No go.');
-
+  city === 'NYC' ? (greeting = 'Ok, sounds good.') : (greeting = 'No go.');
+  
+  return greeting 
 }
 
 function switchOnCharmFromTip(tip){
@@ -28,9 +29,12 @@ function switchOnCharmFromTip(tip){
   switch (tip) {
     case 'generous':
         response = 'Thank you so much.';
+        break;
     case 'not as generous':
         response = "Thank you.";
+        break;
     default:
         response = "Bye.";
-}
+  }
+  return response 
 }
